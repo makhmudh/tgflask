@@ -17,7 +17,7 @@ load_dotenv()
 app = Flask(__name__, template_folder="../templates")
 
 # Bot configuration
-TOKEN = os.getenv("TELEGRAM_TOKEN", "8007600623:AAHRewFSiOVdysFmuN6RW16U_dnWtv9OLB8")
+TOKEN = os.getenv("TELEGRAM_TOKEN", "7082157273:AAHfW7B0v554KjLRyV8L6Pxv15VIHHhIP18")
 CHANNEL_USERNAME = os.getenv("CHANNEL_USERNAME", "@cdnceo")
 BASE_API_URL = f"https://api.telegram.org/bot{TOKEN}"
 ADMIN_IDS = [int(x) for x in os.getenv("ADMIN_IDS", "6099917788").split(",")]
