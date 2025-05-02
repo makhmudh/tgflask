@@ -1,1 +1,11 @@
-.vercel
+Python
+
+pycache/ *.pyc *.pyo *.pyd .Python env/ venv/ .env
+
+Vercel
+
+.vercel/ .vercelignore
+
+Miscellaneous
+
+*.log *.pid *.seed *.pid.lock node_modules/ dist/ build/
