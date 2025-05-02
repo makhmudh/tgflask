@@ -1,6 +1,57 @@
-# Vercel flask
-A demo Flask application running on Vercel
+Telegram File Uploader Bot
+A Flask-based Telegram bot for uploading files to a channel and managing them, deployed on Vercel.
+Features
 
-# Deployment
+Upload documents, photos, videos, and audio files to a Telegram channel.
+Get shareable links for uploaded files.
+Delete files using a button.
+Admin commands for managing files and users.
+Privacy policy page.
 
-[![Deploy to Vercel](https://camo.githubusercontent.com/f209ca5cc3af7dd930b6bfc55b3d7b6a5fde1aff/68747470733a2f2f76657263656c2e636f6d2f627574746f6e)](https://vercel.com/import/project?template=https://github.com/caibingcheng/vercel-flask)
+Project Structure
+project/
+├── api/
+│   └── index.py          # Main Flask application
+├── templates/            # HTML templates (optional, embedded in index.py)
+├── .gitignore
+├── LICENSE
+├── README.md
+├── requirements.txt
+├── vercel.json
+
+Setup
+
+Clone the Repository:
+git clone <repository-url>
+cd <repository-name>
+
+
+Install Dependencies:
+pip install -r requirements.txt
+
+
+Set Up Environment Variables:Create a .env file with the following:
+TELEGRAM_TOKEN=your-telegram-bot-token
+CHANNEL_USERNAME=@yourchannel
+ADMIN_IDS=your-admin-id
+MAX_FILE_SIZE_MB=4000
+RATE_LIMIT=Infinity
+BOT_USERNAME=your-bot-username
+KV_URL=your-vercel-kv-url
+KV_REST_API_URL=your-vercel-kv-rest-api-url
+KV_REST_API_TOKEN=your-vercel-kv-rest-api-token
+KV_REST_API_READ_ONLY_TOKEN=your-vercel-kv-rest-api-read-only-token
+
+
+Deploy to Vercel:
+
+Push the code to a Git repository.
+Connect the repository to Vercel and deploy.
+Set the environment variables in Vercel's dashboard.
+
+
+Set Webhook:After deployment, visit https://your-app.vercel.app/setwebhook to set the Telegram webhook.
+
+
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
