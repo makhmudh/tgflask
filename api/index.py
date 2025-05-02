@@ -23,7 +23,7 @@ BASE_API_URL = f"https://api.telegram.org/bot{TOKEN}"
 ADMIN_IDS = [int(x) for x in os.getenv("ADMIN_IDS", "6099917788").split(",")]
 MAX_FILE_SIZE_MB = int(os.getenv("MAX_FILE_SIZE_MB", 4000))
 RATE_LIMIT = float(os.getenv("RATE_LIMIT", float("inf")))
-BOT_USERNAME = os.getenv("BOT_USERNAME", "CSBCloudBot")
+BOT_USERNAME = os.getenv("BOT_USERNAME", "wifiaddapterbot")
 
 # Vercel KV configuration
 kv = KV(
